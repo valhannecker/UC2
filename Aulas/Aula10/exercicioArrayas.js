@@ -5,15 +5,16 @@
 //e. 3 19 5 6 7 8 9 10 11 12 13
 //f. 9
 
-//SUBI NUM ONIBUS EM MIRROCOS
+//2. SUBI NUM ONIBUS EM MIRROCOS
 
+//3.
 let email = prompt("Digite seu email:")
 let nomeUsuario = prompt("Digite seu nome de usuário:")
 
-console.log ("O e-mail", email.trim(),"foi cadastrado com sucesso. Seja bem vindo(a)", nomeUsuario.trim())
+const fraseEmail = "O e-mail" + email.trim() + " foi cadastrado com sucesso. Seja bem vindo(a) " + nomeUsuario.trim()
+console.log (fraseEmail)
 
-
-//atv comidas favoritas
+//4. atv comidas favoritas
 let array = ["risoto", "pão de queijo", "chocolate", "arroz e feijão com farofa", "batata"]
 console.log (array)
 console.log ("Essas são minhas comidas favoritas:")

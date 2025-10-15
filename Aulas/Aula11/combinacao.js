@@ -10,3 +10,4 @@ let temBrilho = descricao.indexOf ("brilho") !== -1
 let temListras = descricao.indexOf ("listras") !== -1
 
 let lookAprovado = temTamanhoAdequado&& (temBrilho || temListras)
+console.log ("Seu look foi aprovado?", lookAprovado)
