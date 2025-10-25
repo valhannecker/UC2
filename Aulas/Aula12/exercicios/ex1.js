@@ -3,7 +3,7 @@
 //os números ímpares não passarão no teste
 
 //o código serve para precificar diferentes itens do mercado
-//será impresso 2.25
+//será impresso 5, porque a variável seria "maçã" ao invés de maçã
 
 let fruta = prompt("Escolha uma fruta")
 let preco
@@ -29,7 +29,7 @@ console.log("o preço da fruta", fruta, "é R$", preco)
 
 //3. MENSAGEM SECRETA
 //a) a primeira linha está criando uma variável em que o usuário deve inserir o valor através do prompt
-//b) 'Esse número passou no teste' 'essa mensagem é secreta!!'
+//b) 'Esse número passou no teste'
 //c) 
 
 const numero =Number(prompt("Digite o primeiro número."))
