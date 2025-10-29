@@ -34,7 +34,6 @@ for (let i = 0; i <= 9; i++) {
 
 //exemplo for com array
 let array = [10, 4, 7, 8, 200, 77]
-
 for (let i = 0; i < 6; i++) {
     console.log (array [i])
 }
