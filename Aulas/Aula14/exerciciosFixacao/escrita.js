@@ -14,7 +14,7 @@ console.log (bichinhos)
 
 //exercicio de escrita 2.
 //exibindo valores do array
-arrayOriginal = [5, 10, 15, 20, 25]
+arrayOriginal = [5, 10, 1, 15, 20, 25]
 for (let numero of arrayOriginal) {
     console.log (numero)
 }
@@ -37,3 +37,12 @@ for (let i = 0; i < 6; i++) {
     arrayString.push (`O elemento do índex ${i} é: ${arrayOriginal[i]}`)
 } console.log (arrayString)
 
+//imprimindo maior e menor número do array original
+let maiorNumero = arrayOriginal [0]
+let menorNumero = arrayOriginal[0]
+for (let i = 0; i < 6; i++) {
+    if (arrayOriginal[i] > maiorNumero) {
+        maiorNumero = arrayOriginal[i]
+    } else if (arrayOriginal [i] < menorNumero)
+        menorNumero = arrayOriginal [i]
+} console.log('o maior número é '+ maiorNumero +' e o menor é '+ menorNumero)
