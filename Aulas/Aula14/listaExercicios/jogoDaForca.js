@@ -15,8 +15,7 @@ let tentativa = prompt("Digite uma letra:").toLowerCase()
 
 if (letrasTentadas.includes(tentativa)) {
     alert("Você já tentou essa letra!")
-    continue
-}}
+}
 
 letrasTentadas.push(tentativa)
 
@@ -30,6 +29,7 @@ if (palavraSecreta.includes(tentativa)) {
 } else {
     tentativasRestantes -= 1
     console.log ('Letra incorreta!')
+}
 }
 
 if (!palavraAdivinhada.includes("_")) {
