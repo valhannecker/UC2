@@ -59,7 +59,26 @@ console.log(par(4))
 
 //d) verificando tamanho da mensagem
 function tamanhoString (mensagem) {
-    console.log (mensagem.lenght())
+    console.log (mensagem.length)
     console.log (mensagem.toUpperCase())
 }
 tamanhoString ("eu amo chocolate e pokemon")
+
+//-------------------------------------------------
+//EXERCICIO 3. escrita de código
+let n1 = Number(prompt("Digite o primeiro número"))
+let n2 = Number(prompt("Digite o segundo número"))
+function soma (n1, n2) {
+    return n1 + n2
+    }
+function subtracao (n1, n2) {
+    return n1 - n2
+    }
+function divisao (n1, n2) {
+    return n1 / n2
+    }
+function multiplicacao (n1, n2) {
+    return n1 * n2
+    }
+    
+    console.log ("Números inseridos:", n1, "e", n2, `\n Soma: ${soma(n1, n2)} \n Subtração: ${subtracao(n1, n2)} \n Divisão: ${divisao(n1, n2)} \n Multiplicação: ${multiplicacao(n1, n2)}`)
