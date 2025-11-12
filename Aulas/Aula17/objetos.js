@@ -29,11 +29,12 @@ const filme = {
 console.log (filme.elenco[0], "interprteta:", filme.personagens[0], "\n", filme.elenco[1], "interprteta:", filme.personagens[1], "\n", filme.elenco[2], "interprteta:", filme.personagens[2], "\n",filme.elenco[3], "interprteta:", filme.personagens[3], "\n")
 //alterando o primeiro ator pela xuxa
 filme.elenco[0] = "Xuxa"
-
+//imprimindo as propriedades do objeto filme
 console.log (filme.nome)
 console.log (filme.direcao)
 console.log (filme.lancamento)
 console.log (filme["elenco"])
+console.log(filme["personagens"])
 console.log (filme["assistiu"])
 
 //EXERCICIO 2
@@ -44,6 +45,21 @@ const pessoa = {
 }
 
 console.log("O nome da pessoa é " + pessoa.nome + ", ela tem " + pessoa.idade + " anos e gosta muito de "+ pessoa.gêneroMusical)
+
+//EXERCICIO 4
+function criarNovaPessoa () {
+const novaPessoa = {
+    ...pessoa,
+    comidasFavoritas : ["batata frita", "cachorro quente vegano", "xis vegano"],
+    melhorAmigo :{
+        nome : "pedro",
+        idade : 5
+    } 
+}
+console.log (`O nome da pessoa é ${novaPessoa.nome} e suas comidas preferidas são: ${novaPessoa.comidasFavoritas}. Seu melhor amigo se chama ${novaPessoa.melhorAmigo.nome} e tem ${novaPessoa.melhorAmigo.idade} anos.`)
+}
+criarNovaPessoa()
+
 
 //EXEMPLO ARRAY DE OBJETOS
 const professores = [
