@@ -33,3 +33,14 @@ let matriz2 = [
     [13, 14, 15, 16]
 ]
 
+//b) Crie uma função que percorre a matriz e calcula a soma de todos os elementos.
+soma2 = 0
+function somarMatriz (matriz) {
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            soma2 += matriz[i][j]
+        }
+    }
+}
+somarMatriz(matriz2)
+console.log (`A soma dos números é ${soma2}`)

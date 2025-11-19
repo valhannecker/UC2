@@ -1,7 +1,22 @@
 //Sistema de gerenciamento de personagens de LotR
 //array de objetos contendo todas as informações sobre os personagens
 let personagens = [
-    {nome:"frodo bolseiro", classe:"Ladino", nivel:8, HP:65, habilidades:["Determinação dos Hobbits", "Resistência ao Poder do Anel", "Passos Silenciosos"], historicoAcoes: []},
+    {   nome:"frodo bolseiro",
+        classe:"Ladino",
+        nivel:8,
+        HP:65,
+        habilidades:["Determinação dos Hobbits", "Resistência ao Poder do Anel", "Passos Silenciosos"],
+        historicoAcoes: [],
+        atacar: function atacar () {
+            console.log("atacou")
+        },
+        defender: function defender (){
+            console.log ("defendeu")
+        },
+        usarHabilidade: function usarHabilidade (){
+            console.log ("usou uma habilidaede")
+        }
+    },
 
     {nome:"samwise gamgee", classe:"Guardião", nivel: 9, HP: 80, habilidades:["Lealdade Inabalável", "Força Oculta", "Protetor do Mestre"], historicoAcoes: []},
 
@@ -11,8 +26,15 @@ let personagens = [
 
     {nome:"legolas", classe:"Arqueiro Élfico", nivel: 17, HP: 120, habilidades:["Tiro Preciso", "Agilidade Élfica", "Visão Ampliada"], historicoAcoes: []}
 ]
+
 //exibindo todos os personagens
 console.log("Personagens listados: \n", personagens)
+
+//CORREÇÃO
+function listarPersonagens (){
+    for (let personagem of personagens)
+        console.log(personagem)
+}
 
 
 //buscando personagem correspondente ao digitado no prompt
